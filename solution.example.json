@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "mode": "development",
+  "contractRevision": "vereinbarter E2E-Commit",
+  "testDataRevision": "synthetischer Datensatz",
+  "evidence": "evidence/verbund.md",
+  "systems": [
+    {
+      "id": "portal",
+      "repository": "https://github.com/OWNER/PORTAL",
+      "path": "../portal",
+      "ref": null,
+      "port": 3101,
+      "start": [
+        "node",
+        "node_modules/next/dist/bin/next",
+        "dev",
+        "--hostname",
+        "127.0.0.1",
+        "--port",
+        "3101"
+      ],
+      "healthPath": "/api/health",
+      "dependsOn": []
+    },
+    {
+      "id": "erp-mock",
+      "repository": "https://github.com/OWNER/ERP-MOCK",
+      "path": "../erp-mock",
+      "ref": null,
+      "port": 3102,
+      "start": [
+        "node",
+        "node_modules/next/dist/bin/next",
+        "dev",
+        "--hostname",
+        "127.0.0.1",
+        "--port",
+        "3102"
+      ],
+      "healthPath": "/api/health",
+      "dependsOn": [
+        "portal"
+      ]
+    }
+  ]
+}

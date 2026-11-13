@@ -1,0 +1,6 @@
+{
+  "kind": "e2e",
+  "name": "Projektname",
+  "repository": "https://github.com/OWNER/REPO",
+  "courseVersion": "0.1.0-preview.1"
+}
