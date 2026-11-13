@@ -20,3 +20,5 @@ Die Agents nutzen GitHub Issues für gemeinsame Aufgaben. [Workflow](docs/course
 Siehe [Multi-Repo-Anleitung](docs/MULTI-REPO.md). tools/solution.mjs prüft das Manifest, kann fehlende festgelegte Repositories herunterladen und startet den Verbund mit Bereitschaftsprüfung. Start installiert nichts, zieht keinen neuen main-Stand und setzt keine Daten zurück.
 
 Dies ist eine erste Kursfassung. Den tatsächlich erprobten Umfang und die noch ausstehende Erprobung vor dem Hackathon nennt [VALIDATION.md](VALIDATION.md).
+
+[Werkzeuge und Übergaben](docs/course/TOOLS.md). Für neue GitHub-Aufträge steht eine passende Issue-Vorlage bereit.

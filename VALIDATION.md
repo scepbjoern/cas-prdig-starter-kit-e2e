@@ -6,4 +6,4 @@ Fünf automatisierte Szenarien bestanden: doppelte Ports und zyklische Abhängig
 
 Die Health-Prüfung belegt Bereitschaft und Identität, keinen fachlichen E2E-Prozess. Fachliche E2E-Szenarien, Testdaten und menschliche Gruppenabnahme sind projektspezifisch zu ergänzen.
 
-Realer GitHub-Download mit festgelegtem Commit wird im Abschlussnachweis dieser Vorschaufassung ergänzt. Noch offen bis zur praktischen Kursfreigabe: mehrere reale Gruppen-Repositories, Mac, Antigravity, native Anwendungen, parallele persönliche Worktrees und fachliche Computer-Use-Prüfung über mehrere Systeme.
+Zusätzlich wurde das neue private System-Repository über prepare tatsächlich von GitHub in einen neuen temporären Ordner geklont, auf Commit 93693a0530af14f638243e31f68dfdf524bfcced ausgecheckt und mit check verifiziert. Alle 21 mitgelieferten Common-Dateien stimmen nach dem Klonen mit ihren Hashes überein. Noch offen bis zur praktischen Kursfreigabe: mehrere reale Gruppen-Repositories, Mac, Antigravity, native Anwendungen, parallele persönliche Worktrees und fachliche Computer-Use-Prüfung über mehrere Systeme.

@@ -1,0 +1,31 @@
+name: Gemeinsame Planung oder Integration
+description: Führender Auftrag für Architektur, Verträge, Systemzusammenarbeit oder E2E-Prüfung.
+title: "[E2E] "
+body:
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Ziel und betroffene Systeme
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: Koordination und beteiligte Verantwortliche
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: Entscheidung oder Änderung
+      description: Aktuelle Vertragsrevision, gewünschte Änderung und Auswirkungen. Diskussion allein ändert noch keinen Vertrag.
+  - type: textarea
+    id: links
+    attributes:
+      label: Verknüpfte System-Issues und Abhängigkeiten
+      description: Feature-Aufträge im jeweiligen System-Repo führen und hier verlinken.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Erwartetes Ergebnis und Prüfnachweis
+      description: Gemeinsame Stände, Testdaten, Szenarien und tatsächliche Gruppenabnahme.
