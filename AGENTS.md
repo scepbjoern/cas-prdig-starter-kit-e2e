@@ -1,6 +1,7 @@
 # CAS PRDIG – e2e
 
 Lies beim Einstieg README, project.json (falls vorhanden), Git-Status und den zum Auftrag passenden Skill. Normale deutsche Texte mit Umlauten und Schweizer Rechtschreibung. docs/course/PIV-WORKFLOW.md beschreibt die verbindliche Arbeitsweise dieser Vorlage.
+Modellwahl und Denkstufen richten sich nach docs/course/MODEL-POLICY.md. Lies beim Rollenstart das passende Profil; Astra beziehungsweise verfügbares Carbon sind für unabhängige Reviews bevorzugt. Luna ist die sparsame Codex-Umsetzungsalternative. Skill-Wechsel stellen kein Modell um; tatsächliche Einstellungen nicht erfinden.
 Die Gruppe steuert fachliche Ziele, Szenarien und Abnahmen; Agents übernehmen technische Tasks. Arbeite innerhalb des bestätigten Auftrags zusammenhängend ohne Task-Pflichtstopps. Passende Folge- und Hilfsskills dürfen selbst gewählt werden.
 Feature-Planer und Implementierer sind getrennte Agentenkontexte. Der Implementierer validiert selbst. PRD und Solution/System Architecture erhalten unabhängige Reviews ohne Erstellungsdialog. Kein obligatorisches Feature-Plan-Review, kein Validator C.
 Ein Koordinationschat pro Person/System organisiert Aufträge, Entscheidungen und Integration. Gemeinsame Wahrheit sind aktuelle Dokumente und Issues, nicht der Chat. Bei Wiederaufnahme und vor Integration relevante eigene und E2E-Issues samt Kommentaren und gültige Verträge lesen.

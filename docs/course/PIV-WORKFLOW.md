@@ -2,6 +2,10 @@
 
 Prototyping hilft, eine fachliche Lösung zu verstehen und zu demonstrieren. Studierende steuern Ziele, Anforderungen, relevante Testszenarien und Abnahme. Agents planen technische Einzelheiten, implementieren und führen Tests aus. Code lesen ist keine Voraussetzung.
 
+## Modellwahl vor dem Rollenchat
+
+Die [Modellrichtlinie](MODEL-POLICY.md) ordnet Planung, Reviews und Umsetzung passenden Modellen und Denkstufen zu. Wählt vor dem jeweiligen Rollenchat die passende Einstellung. Astra beziehungsweise verfügbares Carbon sind für unabhängige PRD-/Architekturreviews bevorzugt; Luna ist eine sparsame Codex-Alternative für klar abgegrenzte Implementierung. Der Implementierer validiert weiterhin selbst. Ein Skill-Wechsel stellt das Modell nicht automatisch um; ein Modellwechsel erzeugt keinen unabhängigen Kontext.
+
 ## Drei Ebenen
 
 | Ebene | Führende Unterlagen | Verantwortung |

@@ -21,4 +21,4 @@ Siehe [Multi-Repo-Anleitung](docs/MULTI-REPO.md). tools/solution.mjs prüft das 
 
 Dies ist eine erste Kursfassung. Den tatsächlich erprobten Umfang und die noch ausstehende Erprobung vor dem Hackathon nennt [VALIDATION.md](VALIDATION.md).
 
-[Werkzeuge und Übergaben](docs/course/TOOLS.md). Für neue GitHub-Aufträge steht eine passende Issue-Vorlage bereit.
+[Modellwahl und Denkstufen](docs/course/MODEL-POLICY.md) · [Werkzeuge und Übergaben](docs/course/TOOLS.md). Für neue GitHub-Aufträge steht eine passende Issue-Vorlage bereit.

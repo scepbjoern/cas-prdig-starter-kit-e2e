@@ -1,6 +1,6 @@
 {
   "source": "https://github.com/scepbjoern/cas-prdig-starter-kit-common",
-  "version": "0.1.0-preview.1",
+  "version": "0.1.0-preview.2",
   "files": {
     "docs/course/COLLABORATION.md": "84f279b9cf7d81f6d681166b1c46dbdd5cff3f434db5097cba31f2cad102db34",
     "docs/course/diagrams/1.svg": "4cbd97f15317f29b39354abc7a416b8e3a96948304c21efcf0d67ce741b81145",
@@ -11,9 +11,10 @@
     "docs/course/diagrams/README.md": "65579373b6968907a05031b95086c23a6497abb17263984d245563d2615d4e56",
     "docs/course/DIAGRAMS.md": "6afb3d2f0b2bb63634710cd97cec72c2fa56bf24ae163eee1c88223c0105ecc2",
     "docs/course/GLOSSARY.md": "27000a37dfb2c410a2191cb7c73d40783f17716a6ec90316a39aafbb99ffb9bb",
-    "docs/course/PIV-WORKFLOW.md": "d428a88d6aa3c9591624f434a90dfea9db3ad7ac582f9c0a0f00a9f4d5ca8eec",
-    "docs/course/TOOLS.md": "c08461c52f9f8bd255da8602f8ae377dfc951b17b54e4fffe1aedbbc1caf6323",
-    "templates/shared/HANDOFF.md": "c436a58c5e7546d8513e042e5c555cc2d2b1d5bd753ef9a4535af5c4a4e05bc9",
+    "docs/course/MODEL-POLICY.md": "da884f4430bb7f760243e096432f8f68c991cf28fdd3d2d4df0731c5d03a533b",
+    "docs/course/PIV-WORKFLOW.md": "cfd34797eda3eb47119678efbf6caf34c17c9c2f76441aa09c651a3d054a4dbd",
+    "docs/course/TOOLS.md": "0f9d64d65caf9314b7ffaef91cdb80aa28adbffe25e6acdf33e68faccc784494",
+    "templates/shared/HANDOFF.md": "80a371bb2471e3aca8f8e8474e78aaed38a0724e668f0cace21841ea3487a741",
     "templates/shared/REVIEW.md": "8a2cb83beef1c4818a21b2db22532206ab3344914fa5a58c2df2377aa7ffc42a",
     "templates/shared/TEST-EVIDENCE.md": "0ea4dbf5245305e8239d343a70668267eddeb17f35bd10c79806beb82c76e5aa",
     ".agents/skills/commit/SKILL.md": "eabdeef096ebfdc49e99c5d93122040bf7fa6d4b4de07ed343c1e5faa12e0a67",
@@ -21,8 +22,8 @@
     ".agents/skills/finish-release/SKILL.md": "eabd90f5fdfd8bf89c91cff19e7ea7a78308df2d815cfd6eff56c7dfef3b3dee",
     ".agents/skills/init-project/SKILL.md": "30d6c0c4284886dfae9c8f3310b5e0d1a4600f3e124d8da244a537e4318eafdf",
     ".agents/skills/integrate-architecture-review/SKILL.md": "88519351fbebd783ef345cccee9c158d9c16c25be29d05fb2bd117903d6c8a5b",
-    ".agents/skills/prime/SKILL.md": "9380947ccf0fcc96c4563ba1d154219ff39aa0df67f0a0e182f77f59331f6507",
+    ".agents/skills/prime/SKILL.md": "3dbed0fda7593a888db620d0fa70e02a0d7337bfa2dd76f5168b24eacbfbbbed",
     ".agents/skills/reflect-rules/SKILL.md": "fa15ea26d55531c7f0a3e5ce4f3fb390eb8f4b8991179ee7e81d4d6bb957a3f8",
-    ".agents/skills/review-architecture/SKILL.md": "90182042755e260251f40aa24f5f24e0e1c799116284f2247a085c9f467709e9"
+    ".agents/skills/review-architecture/SKILL.md": "4d61aa3ca8701b5a0ba776cec952338b7ab494f602259e1bc9a858fe5e017968"
   }
 }
