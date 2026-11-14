@@ -4,6 +4,8 @@ Die Ansichten beantworten unterschiedliche Fragen. Orange kennzeichnet menschlic
 
 ## 1. Ebenen und Artefakte
 
+[Darstellung als SVG öffnen](diagrams/01-ebenen-und-artefakte.svg)
+
 ~~~mermaid
 flowchart TB
   R[Vorhandener Bericht und Soll-Konzept] --> B[Prototype Brief]
@@ -37,6 +39,8 @@ flowchart TB
 
 ## 2. Mensch und Agents im Feature-PIV
 
+[Darstellung als SVG öffnen](diagrams/02-mensch-und-agents-im-feature-piv.svg)
+
 ~~~mermaid
 flowchart TB
   H1[Mensch: Ziel, Kriterien und Szenarien] --> A[Planer A: Feature Plan]
@@ -60,6 +64,8 @@ Planer und Implementierer sind verschieden. Implementierer und Validator sind de
 
 ## 3. Freie visuelle Exploration
 
+[Darstellung als SVG öffnen](diagrams/03-freie-visuelle-exploration.svg)
+
 ~~~mermaid
 flowchart TB
   P[Erstes PRD: MVP konkret] --> V[Separater Chat: frei vibe coden]
@@ -77,6 +83,8 @@ flowchart TB
 Im Explorationschat keine PIV-Skills. Explorationscode wird niemals übernommen. Ein später gelieferter Mock erfüllt trotzdem Interface und Data Contracts.
 
 ## 4. Integration und gemeinsame Ausbaustufe
+
+[Darstellung als SVG öffnen](diagrams/04-integration-und-gemeinsame-ausbaustufe.svg)
 
 ~~~mermaid
 flowchart TB
@@ -96,6 +104,8 @@ flowchart TB
 ~~~
 
 ## 5. Skills, Reihenfolge und Auslöser
+
+[Darstellung als SVG öffnen](diagrams/05-skills-reihenfolge-und-ausloeser.svg)
 
 M = Mensch gibt den Auftrag oder entscheidet fachlich. A = Agent kann den Folgeschritt innerhalb dieses Auftrags wählen. R = frischer unabhängiger Review-Kontext. B = neuer Implementierungskontext.
 
