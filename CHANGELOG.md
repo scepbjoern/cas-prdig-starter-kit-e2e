@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.0-preview.4 – 25.11.2026
+
+Fachliche Planungsdialoge: eigener Beitrag, Speicheraufträge, sichtbare offene Punkte und klarer Übergang. Eigenständig verständlicher Prototype Brief; gezielte Originalquellen für Architektur/PRDs. Plattformunabhängige Manifestprüfung mit Schutz echter Änderungen. Gemeinsame Dateien über Common verteilt. Praktischer Prüfstand und Grenzen in VALIDATION.md.
+
 ## 0.1.0-preview.3 – 14.11.2026
 
 Sprechende Diagramm-Dateinamen und kompakte Unterrichtsansichten; direkte Verweise auf die Grafiken. Common-Dateien bewusst synchronisiert.

@@ -16,6 +16,10 @@ Die [Modellrichtlinie](MODEL-POLICY.md) ordnet Planung, Reviews und Umsetzung pa
 
 Systeme sind Anwendungen oder Mocks. Technische Komponenten liegen innerhalb eines Systems. Ein persönlicher Verantwortungsbereich wird durch Features abgegrenzt; er ist kein zusätzliches Pflichtartefakt. Ein Epic ist ebenfalls keine obligatorische Kategorie.
 
+## Fachlich planen und Zwischenstände sichern
+
+Für fachliche Klärung gilt [Planung im Dialog](PLANNING-DIALOGUE.md): eigene Vorstellungen zuerst, Fortschritt und offene Punkte sichtbar, Speicherung auf Auftrag. Die Studierenden veranlassen das Sichern vor Pausen oder Chatwechseln. Prototype Brief und Solution Architecture können im gleichen E2E-Planungschat entstehen; unabhängige Reviews und getrennte Feature-Kontexte bleiben bestehen.
+
 ## Von vorhandenen Ergebnissen ausgehen
 
 Im E2E-Projekt beginnt init-project, anschliessend define-prototype beim bestehenden Bericht, Soll-Konzept und den Datenunterlagen. Die Gruppe entscheidet im Dialog, was unverändert, vereinfacht, gemockt, technisch ersetzt, ergänzt oder begründet ausgelassen wird. Normalfall ist der ganze E2E-Prozess. Der Agent entscheidet die Auswahl nicht vorweg.

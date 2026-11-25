@@ -4,6 +4,10 @@
 
 Für die Auswahl vor einem Rollenchat gilt [Modelle und Denkstufen](MODEL-POLICY.md): Astra für unabhängige Reviews, Sol für Planung und Umsetzung, Luna als sparsame Umsetzungsalternative. In Antigravity Carbon für PRD/Architektur und Reviews, sofern verfügbar, sonst Argon. Modellwechsel und Kontextwechsel sind unterschiedliche Dinge.
 
+In der im Kurs erprobten Codex-Ansicht öffnet @ die Skill-Auswahl. Alternativ den Skill namentlich beauftragen und seine SKILL.md lesen lassen. Fachliche Planungsdialoge folgen [diesen Regeln](PLANNING-DIALOGUE.md); Zwischenstände vor Pausen selbst zum Speichern beauftragen.
+
+Kursdateien prüfen: node tools/course/course-integrity.mjs im Projektordner. Das Manifest verwendet SHA-256 mit LF-normalisierten UTF-8-Textdateien (hashPolicy); Binärdateien bleiben bytegenau. Die Prüfung erkennt auch ältere Manifeststände mit reinen LF/CRLF-Abweichungen. Echte Inhaltsänderungen bleiben sichtbar und werden bei der Verteilung nicht überschrieben.
+
 Die Skills liegen in .agents/skills. Dieser gemeinsame Pfad ist auch in der aktuellen [Antigravity-Dokumentation](https://antigravity.google/docs/skills) beschrieben. Der konkrete Erststart und der Wechsel zwischen den beiden Kurswerkzeugen müssen im verwendeten System erprobt werden.
 
 Übergaben funktionieren über gespeicherte Dokumente, konkrete Revisionen und templates/shared/HANDOFF.md. Der empfangende Agent liest die benötigten Quellen selbst. Planung und Implementierung bleiben getrennte Kontexte; Implementation und Validierung bleiben zusammen.

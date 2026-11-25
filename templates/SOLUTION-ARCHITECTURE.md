@@ -1,5 +1,8 @@
 # Solution Architecture
 
+Status / Revision / zugrunde liegender Prototype Brief / bestätigte Entscheidungen und offene Annahmen:
+Gesamtumfang und erste Ausbaustufe; spätere bestätigte Stufen nur soweit architekturrelevant.
+
 ## Verständlicher Überblick
 Systemgrenzen und Datenflüsse, vorzugsweise als Diagramm. Welches System tut was? Welche fachlichen Folgen haben die Entscheidungen?
 
