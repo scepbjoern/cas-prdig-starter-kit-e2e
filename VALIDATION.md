@@ -1,5 +1,13 @@
 # Prüfstand – E2E
 
+## Nachprüfung 0.1.0-preview.5 – 26.11.2026
+
+- npm test: 5 vorhandene Tests bestanden; insgesamt zehn in Common/E2E/System.
+- Paketweit 43 Skill-Dateien auf Name/Beschreibung und konsistente Sicherungsanweisung geprüft; 13 unterschiedliche Markdown-Vorlagen auf fortlaufende Abschnittsnummern, Design-Asset auf Gleichheit geprüft.
+- Common-Dateien über tools/distribute.mjs verteilt; Manifestprüfung in beiden Ziel-Kits bestanden. Git-Diffs auf unbeabsichtigte Änderungen und Formatfehler geprüft.
+- Inhaltlicher Abgleich: Review mit/ohne Befunde, fachliche Zustimmung nach Integration, Speicherauftrag gegenüber offenem Dialog, fehlender Pushzugriff, bestehende Systemkonfiguration und Startplan gegenüber tatsächlichem E2E-Lauf. Dies ist eine Anweisungsprüfung, kein ausgeführter Modellvergleich.
+- Neuer menschlicher Systemplanungsdurchlauf und Antigravity-Praxistest stehen aus. Vorhandene Tests bestätigen Werkzeuge und Schutzmechanismen; sie belegen keine garantierte Befolgung jeder Dialogregel durch alle Modelle.
+
 ## Nachprüfung 0.1.0-preview.4 – 25.11.2026
 
 Alle zehn automatisierten Tests bestehen: Common 3 (einschliesslich zwei neuer Integritätsprüfungen), E2E 5, System 2. Geprüft: frische Git-Klone mit LF/CRLF, Migration alter Byte-Manifeste, Erkennung und Überschreibschutz echter Änderungen sowie Erhalt eigener Planungsdateien. Beide verteilten Manifeste stimmen für alle 28 Common-Dateien. 43 Skill-Dateien auf Frontmatter geprüft.

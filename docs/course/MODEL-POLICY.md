@@ -1,66 +1,68 @@
 # Modelle und Denkstufen im PIV
 
-Stand: 14.11.2026 · Common 0.1.0-preview.2
+Stand: 26.11.2026.
 
-Diese Kursregel hilft bei der Wahl eines geeigneten Modells. Die konkrete Auswahl hängt von verfügbarem Kontingent, Konto und Programmversion ab. Sie ist keine neue Abgabeanforderung und kein gemessener Vergleich aller Modelle.
+Wählt vor einer Aufgabe ein geeignetes Modell und eine passende Denkstufe. Prüft die tatsächliche Auswahl selbst im Agentenwerkzeug. Ein Skill beschreibt das Vorgehen; er stellt das Modell nicht automatisch um. Verfügbare Modelle und Nutzungslimits hängen vom Konto und Werkzeug ab.
 
-## Die kurze Empfehlung
+Die folgende Tabelle ist eine Kursempfehlung. Sie verbindet die bisherige Kursmethodik mit den aktuellen Modellrollen; ein vollständiger Vergleich aller Modelle an Kursprojekten liegt nicht vor.
 
-| Arbeit | Codex / ChatGPT Desktop | Antigravity |
+## Empfehlung nach Aufgabe
+
+| Aufgabe | Codex / ChatGPT Desktop | Antigravity |
 | --- | --- | --- |
-| Unabhängiger Review von PRD, Solution Architecture oder System Architecture | **GPT-6 Astra / Medium**, bei komplexen Verträgen und Abhängigkeiten **High**. Bei knappem Kontingent GPT-6.1 Sol / High als Alternative. | **Gemini 4 Carbon / High**, sofern verfügbar; sonst Gemini 4 Argon / High. |
-| Prototypumfang, PRD, Architektur, Designentscheidungen und Feature-Planung | **GPT-6.1 Sol / High**. Bei genügend Kontingent Astra ausdrücklich auch für Erstellung und anspruchsvolle Designentscheidungen verwenden. | **Carbon / High** für anspruchsvolle PRD-Erstellung, Architektur und Designentscheidungen, sofern verfügbar; sonst **Argon / High**. |
-| Feature-Implementierung und eigene Validierung | **GPT-6.1 Sol / Medium**. Sparsame Alternative für einen klar abgegrenzten Auftrag: **GPT-6 Luna / High**, bei Bedarf **Extra High**. | **Gemini 4 Hydrogen / Medium**, bei schwieriger Umsetzung oder Fehleranalyse High. |
-| Schwierige E2E-Fehleranalyse und Beurteilung widersprüchlicher Ergebnisse | Sol / High, bei besonders anspruchsvollen Fällen Astra. | Carbon oder Argon / High, soweit verfügbar. |
+| Prototypumfang, PRD, Architektur, Design und Feature-Planung | **GPT-6.2 Sol / High**. Bewährte Alternative: **GPT-6.1 Sol / High**. Für besonders anspruchsvolle Entscheidungen Astra. | **Gemini 4 Neon / High**. Für komplexe Architektur und weitreichende Entscheidungen **Carbon / High**. |
+| Unabhängiger PRD- oder Architekturreview | **GPT-6.2 Astra / High**; bewährte Alternative **GPT-6 Astra / Medium**, bei komplexen Verträgen High. Bei knappem Zugang Sol / High. | **Carbon / High**, sofern verfügbar; **Neon / High** als Alternative. |
+| Feature-Implementierung und eigene Validierung | **GPT-6.2 Sol / Medium**, bei schwierigen Fehlern High. **GPT-6.1 Sol** bleibt eine Alternative. Für klar abgegrenzte Aufträge **Luna / High**. | **Hydrogen / Medium**, bei schwieriger Umsetzung High; bei komplexer Diagnose Neon oder Carbon. |
+| Schwierige systemübergreifende Fehleranalyse | **Sol / High**, bei besonders anspruchsvollen Fällen **Astra / High**. | **Neon / High**, bei tiefgreifenden Architekturproblemen **Carbon / High**. |
 
-Mit Carbon ist das Modell **Gemini 4 Carbon** gemeint. Es ist laut Google am 14.11. für Google AI Ultra und berechtigte Enterprise-Zugänge vorgesehen. Argon ist ebenfalls tarifabhängig; ein beliebiger kostenloser Studierenden-Trial garantiert keinen Zugriff. Falls beide fehlen, kann Hydrogen / High als Einstieg dienen. Für die Kursteilnahme ist kein Upgrade allein wegen dieser Tabelle erforderlich.
+Die Empfehlungen für Antigravity leiten sich aus Googles Positionierung ab: Neon für anspruchsvolle tägliche Arbeit, Carbon für tiefe Architektur- und Verifikationsaufgaben, Hydrogen für zügige Umsetzung. Sie sind keine eigene Rangliste aus Kurs-Benchmarks. [Neon](https://antigravity.google/blog/gemini-4-neon-in-google-antigravity), [Carbon](https://antigravity.google/blog/gemini-4-carbon-in-google-antigravity), [Hydrogen](https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity).
 
-## Welche Skills gehören zu welchem Profil?
+## Codex: neue und bewährte Modelle
 
-- **Planung und fachliche Entscheidungen:** `define-prototype`, `create-prd`, `plan-solution-architecture`, `plan-system-architecture`, `define-system-design`, `slice-features`, `plan-feature` und inhaltlich anspruchsvolle Updates. Auch ein Koordinationsagent verwendet dieses Profil, wenn er schwierige Entscheidungen vorbereitet.
-- **Unabhängige Reviews:** `review-prd` und `review-architecture`. Die anschliessende Integration von Befunden erfolgt beim Autor; wesentliche fachliche Änderungen brauchen ebenfalls sorgfältige Beurteilung.
-- **Umsetzung und eigene Prüfung:** `bootstrap-system`, `implement-feature` mit `validate-feature` sowie die technische Integration. Schwierigere Integration kann das stärkere Profil benötigen.
-- **E2E-Prüfung:** `validate-e2e`. Bekannte Prüfungen ausführen verlangt nicht automatisch einen Modellwechsel; unklare Befunde beurteilen oder einen systemübergreifenden Fehler diagnostizieren kann ihn rechtfertigen.
-- **Hilfsschritte:** `prime`, `document`, `commit`, `finish-release` und `reflect-rules` bleiben normalerweise beim laufenden Agenten. Kein zusätzlicher Modellwechsel oder Subagent nur für jeden kleinen Hilfsschritt. Anspruchsvolle Entscheidungen werden nach Inhalt eingeordnet.
+Die Kursleitung hat den aktuellen eigenen Durchlauf vor allem mit **GPT-6.2 Sol / High** und für Reviews mit **GPT-6.2 Astra** erprobt. Bei ausreichendem Nutzungslimit nutzt sie weiterhin gerne **GPT-6.1 Sol** und **GPT-6 Astra**. Dies ist eine persönliche Arbeitserfahrung; neuere Modelle werden dadurch weder pauschal als besser noch als schlechter bewertet.
 
-## Luna als echte Umsetzungsalternative
+**GPT-6.1 Terra** eignet sich besonders für visuelles Verständnis, Screenshots, verständliche Texte und Bedienaufgaben in unterstützten Anwendungen. Im Kurs ist es eine sinnvolle Option für visuelle UI-Prüfungen und Browser-/Computerarbeit. Für die inhaltliche Prüfung komplexer Architekturen bleibt das Review-Profil oben der Ausgangspunkt. [OpenAI: Modellrollen](https://learn.chatgpt.com/docs/models).
 
-Luna ist auch für klar abgegrenzte Feature-Implementierung vorgesehen, nicht nur für Text- oder Dokumentationsarbeiten. Gute Voraussetzungen sind ein gespeicherter, tragfähiger Feature Plan, geklärte Verträge und überprüfbare Szenarien. Beginnt mit High. Extra High ist eine mögliche Steigerung, keine Garantie für das Ergebnis eines grösseren Modells.
+Für die Modellwahl zählen **Nutzungsverbrauch und Kosten pro erfolgreich erledigter Aufgabe**, einschliesslich nötiger Korrekturrunden. OpenAI gibt an, dass **GPT-6.2 Sol mehr Aufgaben im gleichen bezahlten Abo ermöglicht als GPT-6.1 Sol**. Das spricht für einen geringeren Verbrauch pro Aufgabe; eine allgemeingültige prozentuale Ersparnis oder einen festen Preis pro Planungsauftrag nennt der Hersteller dafür nicht. [OpenAI: GPT-6.2 Sol](https://learn.chatgpt.com/docs/whats-new/gpt-62-astra-sol).
 
-Wenn derselbe relevante Test trotz zweier gezielter Korrekturen weiterhin scheitert oder eine ungeklärte Architekturentscheidung auftaucht, empfiehlt der Agent eine stärkere Diagnose mit Sol oder Astra. Zwei Versuche sind ein praktischer Richtwert. Nicht unbegrenzt dieselbe erfolglose Änderung wiederholen; Tests und Akzeptanzkriterien nicht abschwächen.
+Als Orientierung nennt OpenAI für **typische Codex-Aufgaben mit GPT-6.2 Sol etwa 2–15 Credits**. Ein entsprechender aktueller Aufgabenrichtwert für GPT-6.1 Sol fehlt in dieser Tabelle; deshalb lässt sich daraus kein belastbarer direkter Zahlenvergleich ableiten. Die Angabe stammt aus der Rate Card für Business/Enterprise/Edu und ist kein Festpreis für eine Kursaufgabe. Ein Preis in Franken hängt zusätzlich vom Tarif beziehungsweise Credit-Preis ab. [OpenAI: Credit-Verbrauch](https://help.openai.com/en/articles/11481834-chatgpt-rate-card-business-enterpriseedu-credit-based-pricing).
 
-Der Implementierer bleibt für seine eigene Validierung verantwortlich. Daraus entsteht kein separater obligatorischer Validator. Die fachliche Abnahme bleibt beim Menschen.
+Vergleicht nach Möglichkeit ähnliche Aufträge bei gleicher Denkstufe und Geschwindigkeit und beurteilt Ergebnisqualität, nötige Nacharbeit und tatsächlichen Verbrauch zusammen. Gleiche Tokenpreise bedeuten nicht gleiche Kosten pro erledigter Aufgabe. Die angezeigten Nachrichtenkontingente sind ebenfalls keine Zahl vollständig erledigter Aufgaben. [OpenAI: Preise und Nutzung](https://learn.chatgpt.com/docs/pricing).
+
+## Antigravity: Verfügbarkeit und Orchestrator
+
+**Argon wird laut Google am 30.11.2026 entfernt** und ist deshalb keine Empfehlung für neue Kursaufgaben mehr. Neon und Carbon sind je nach Tarif verfügbar; ein gewöhnlicher kostenloser Pro-Trial garantiert ihren Zugang nicht. Hydrogen ist die verfügbare Grundoption auf allen Tarifen. Fehlen Neon und Carbon, beginnt mit Hydrogen / High und prüft schwierige Entscheidungen entsprechend sorgfältig. Ein Upgrade nur wegen dieser Tabelle ist keine Kursvoraussetzung. [Google: Modelle und Verfügbarkeit](https://antigravity.google/docs/models).
+
+Der **Orchestrator** kombiniert einen Planer, beispielsweise Neon oder Carbon, mit einem Ausführer wie Hydrogen in derselben Unterhaltung. Es handelt sich nicht um drei gleichartige «Orchestrator-Versionen» der Einzelmodelle. In der App lassen sich je nach Konto Planer/Ausführer und Denkstufen wählen; die CLI bietet andere Einstellmöglichkeiten. [Google: Orchestrator](https://antigravity.google/docs/models#orchestrator).
+
+Für den Kurs ist Orchestrator eine optionale technische Arbeitsweise innerhalb eines abgegrenzten Auftrags. Unsere methodische Trennung bleibt bestehen: Feature-Planung und Implementierung starten in getrennten Kontexten; unabhängige Reviews erhalten keinen Erstellungsdialog. Die interne Rückprüfung eines Orchestrators ist kein Ersatz für diesen unabhängigen Review. Vor Verwendung die tatsächliche Konfiguration und den Kursauftrag prüfen.
+
+## Luna für abgegrenzte Umsetzung
+
+Luna kann auch Features implementieren, wenn ein tragfähiger gespeicherter Feature Plan, geklärte Verträge und überprüfbare Szenarien vorliegen. Beginnt mit High; Extra High ist bei Bedarf eine Steigerung.
+
+Scheitert derselbe relevante Test trotz zweier gezielter Korrekturen weiter oder taucht eine ungeklärte Architekturentscheidung auf, empfiehlt der Agent eine Diagnose mit Sol oder Astra. Zwei Versuche sind ein praktischer Richtwert. Tests und Akzeptanzkriterien bleiben verbindlich.
+
+Der Implementierer validiert seine Änderungen selbst. Die fachliche Abnahme bleibt beim Menschen.
+
+## Skills und Rollen
+
+- **Planung:** define-prototype, create-prd, plan-solution-architecture, plan-system-architecture, define-system-design, slice-features, plan-feature und anspruchsvolle Updates.
+- **Unabhängiger Review:** review-prd und review-architecture. Befunde werden danach im ursprünglichen Autorenchat integriert.
+- **Umsetzung:** bootstrap-system, implement-feature und validate-feature; Integration nach Schwierigkeit.
+- **E2E-Prüfung:** validate-e2e. Bekannte Prüfungen ausführen braucht nicht automatisch einen Modellwechsel; schwierige Befunde können das Diagnoseprofil erfordern.
+- **Hilfsschritte:** prime, document, commit, finish-release und reflect-rules bleiben normalerweise beim laufenden Agenten. Kein zusätzlicher Rollenwechsel für jeden Hilfsskill.
 
 ## Auswahl und Übergabe
 
-1. **Vor einem neuen Rollenchat:** Rolle und passende Empfehlung bestimmen; Modell und Denkstufe in der Auswahl unter dem Eingabebereich einstellen. In Codex CLI ist dies auch mit `/model` möglich.
-2. **Kontexte getrennt halten:** Planer A übergibt einen gespeicherten Plan an Implementierer B in einem frischen Kontext. Unabhängige Reviewer erhalten die Dokumente und nötigen Grundlagen, nicht den Erstellungsdialog. Ein anderer Modellname allein erzeugt keine Unabhängigkeit.
-3. **Nicht bei jedem Skill umstellen:** Implementierer B führt `validate-feature` selbst aus. Passende Folge-Skills dürfen innerhalb des Auftrags ohne Modellwechsel weiterlaufen.
-4. **Bei nötiger Umstellung:** Der Agent nennt die Empfehlung und bereitet eine kurze Übergabe vor. Er behauptet keinen automatischen Wechsel seines Hauptmodells. Ist die tatsächliche Einstellung nicht zuverlässig sichtbar, nennt er sie als unbekannt statt sie zu erraten.
+1. Vor dem Rollenstart Rolle, Modell und Denkstufe bestimmen und selbst in der Modellauswahl einstellen. In Codex CLI ist die Auswahl über /model möglich. [OpenAI: Modellauswahl](https://learn.chatgpt.com/docs/models).
+2. Im laufenden Auftrag passende Folge-Skills verwenden, ohne für jeden Schritt das Modell zu wechseln.
+3. Für einen unabhängigen Review einen neuen Chat mit aktuellen Dokumenten und fachlichen Grundlagen starten. Den Erstellungsdialog nicht übergeben. Dasselbe Modell in einem neuen Kontext kann unabhängig prüfen; ein blosser Modellwechsel im bisherigen Chat schafft diese Unabhängigkeit nicht.
+4. Für die Integration der Reviewbefunde in den ursprünglichen Autorenchat zurückkehren.
+5. Kann der Agent eine andere Einstellung empfehlen, benennt er sie. Er behauptet keine tatsächlich nicht überprüfte Modellumstellung. Vor einem nötigen Chatwechsel den Arbeitsstand speichern lassen.
 
-Ein Skill ist eine Anleitung, keine Modellkonfiguration. Auch ein autonomes Ziel ersetzt die Auswahl und die fachliche Abnahme nicht.
+Optionale Subagents setzen einen entsprechenden Auftrag beziehungsweise passende Projektregeln und eine unterstützende Umgebung voraus. Modellkonfiguration und Kontextübergabe prüfen; nicht ungeprüft die ganze Unterhaltung an einen unabhängigen Reviewer weitergeben. Bei Antigravity bezeichnen inherit, flash und pro Modellstufen; daraus nicht automatisch ein konkretes Modell ableiten. [Google: Subagents](https://antigravity.google/docs/subagents).
 
-## Optionale Delegation
+## Prüfstand dieser Empfehlung
 
-Ein beauftragter Koordinationsagent kann passende Subagents nutzen, sofern die Umgebung dies unterstützt und der Auftrag oder die Projektanweisungen Delegation vorsehen. Dabei Modell und Denkstufe ausdrücklich konfigurieren, soweit unterstützt, und die tatsächlich zurückgemeldete Auswahl prüfen. Ohne zuverlässige Einstellmöglichkeit bleibt der manuelle Rollenchat der Rückfallweg.
-
-Codex unterstützt Modell- und Reasoning-Vorgaben für Subagents. Die dokumentierten Antigravity-Subagent-Stufen `inherit`, `flash` und `pro` dürfen nicht ohne Nachweis mit einem konkreten Modell wie Carbon gleichgesetzt werden. Frische Kontexte werden über die Umgebung hergestellt; der komplette Eltern-Chat darf nicht ungeprüft an einen unabhängigen Reviewer oder Implementierer vererbt werden.
-
-Antigravity **Orchestrator (Carbon/Argon)** kombiniert Planung und Umsetzung automatisch innerhalb einer Unterhaltung. Das ist eine separate Option, keine automatische Umsetzung unserer Regel für unabhängige Kontexte. Vor einem Einsatz als Kursstandard müssen diese Grenzen praktisch geprüft werden.
-
-## Nutzungslimits bewusst einsetzen
-
-Sichert ein ausreichendes Kontingent für wichtige Reviews und schwierige Entscheidungen. Bei knappen Limits ist Luna High eine Umsetzungsalternative. Mehr Denkaufwand kann mehr Zeit und Tokens kosten. Standardgeschwindigkeit ist sparsamer als Fast/Ultrafast; die aktuelle Nutzungsanzeige ist massgeblich. Ein Modellwechsel setzt bereits ausgeschöpfte gemeinsame Limits nicht zurück.
-
-Die Empfehlungen sind anhand offizieller Dokumentation zusammengestellt; es liegt kein Praxistest sämtlicher Modelle mit den Kursprojekten vor. Die vereinbarten Tests und die menschliche Abnahme gelten bei jeder Modellwahl gleichermassen.
-
-## Quellen
-
-Geprüft am 14.11.2026:
-
-- [OpenAI: Modelle und Denkstufen](https://learn.chatgpt.com/docs/models)
-- [OpenAI: Subagents und Modellkonfiguration](https://learn.chatgpt.com/docs/agent-configuration/subagents)
-- [OpenAI: Nutzungslimits und Kreditverbrauch](https://learn.chatgpt.com/docs/pricing)
-- [Google: Modelle und Verfügbarkeit in Antigravity](https://antigravity.google/docs/models)
-- [Google: Carbon für Architektur und anspruchsvolle Verifikation](https://antigravity.google/blog/gemini-4-carbon-in-google-antigravity)
-- [Google: Custom Subagents](https://antigravity.google/docs/subagents)
+Offizielle Quellen am 26.11.2026 gelesen. OpenAI-Abgleich bewusst kurz: Modellrollen, Preisübersicht und Verbrauch pro Aufgabe; ergänzend lokale Modellbeschreibungen geprüft. Antigravity-Modellübersicht und Herstellerbeiträge zu Neon, Carbon und Hydrogen abgeglichen. Der persönliche Teststand der Kursleitung ersetzt keinen vollständigen Vergleich sämtlicher Modelle und Werkzeuge.

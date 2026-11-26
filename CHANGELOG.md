@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.0-preview.5 – 26.11.2026
+
+Common-Regeln übernommen. Solution Architecture enthält ab der ersten Fassung den gemeinsamen Startplan und die Zuständigkeit für solution.json. E2E-Vorlagen nummeriert; Reviewintegration führt zum menschlichen Lesen und zur folgenden Systemplanung.
+
 ## 0.1.0-preview.4 – 25.11.2026
 
 Fachliche Planungsdialoge: eigener Beitrag, Speicheraufträge, sichtbare offene Punkte und klarer Übergang. Eigenständig verständlicher Prototype Brief; gezielte Originalquellen für Architektur/PRDs. Plattformunabhängige Manifestprüfung mit Schutz echter Änderungen. Gemeinsame Dateien über Common verteilt. Praktischer Prüfstand und Grenzen in VALIDATION.md.

@@ -26,11 +26,11 @@ Im E2E-Projekt beginnt init-project, anschliessend define-prototype beim bestehe
 
 Der Prototype Brief beschreibt ausschliesslich den tatsächlich zu bauenden Prototyp und seine übergreifenden Szenarien. Ein separater Abweichungsnachweis dient dem Bericht und der Beurteilung; er wird nicht an jeden späteren Arbeitsagenten mitgegeben.
 
-plan-solution-architecture konkretisiert Systeme, Datenflüsse, Verträge, Verantwortlichkeiten, feste Ports, gemeinsame Testdaten und Startbedingungen. Ein unabhängiger review-architecture prüft diese Grundlage in einem frischen Kontext. Der Autor bearbeitet die Befunde mit integrate-architecture-review.
+plan-solution-architecture konkretisiert Systeme, Datenflüsse, Verträge, Verantwortlichkeiten, feste Ports, gemeinsame Testdaten und bereits in der ersten Fassung den gemeinsamen Start der ganzen Solution für die E2E-Szenarien. Der E2E-Planungsagent führt solution.json anhand der später tatsächlich eingerichteten Systeme nach; die Gruppe bringt diese Rückmeldung in den Planungschat. Ein unabhängiger review-architecture prüft diese Grundlage in einem frischen Kontext. Der Autor bearbeitet die Befunde mit integrate-architecture-review.
 
 ## System planen
 
-init-project prüft den realen Zugriff auf das E2E-Projekt und dessen Quellen. create-prd leitet daraus das System-PRD ab. Die erste Ausbaustufe wird konkret, spätere Erweiterungen zunächst grob beschrieben. define-system-design und plan-system-architecture ergänzen Gestaltungsgrundsätze und technische Realisierung. Die Architektur enthält einen für Studierende verständlichen Überblick und die technischen Details für Agents.
+init-project prüft den realen Zugriff auf das E2E-Projekt und dessen Quellen. Pro System entsteht eine gemeinsame Planung; bei mehreren beteiligten Personen führt eine Person den Dialog und stimmt die Ergebnisse mit den anderen ab. create-prd leitet das System-PRD ab: erste Ausbaustufe konkret, spätere Erweiterungen grob. Danach folgen unabhängiger PRD-Review und Integration im Autorenchat. Bei GUI ergänzt define-system-design die Gestaltungsgrundsätze; anschliessend konkretisiert plan-system-architecture die technische Realisierung. Die Architektur enthält einen verständlichen Überblick und technische Details für Agents. Es folgen unabhängiger Architekturreview und Integration, bevor Features aufgeteilt werden. Neue Design-Erkenntnisse gezielt ins PRD zurückführen; vorhandene aktuelle Ergebnisse nicht nochmals erstellen.
 
 PRD und Architektur werden unabhängig vom Erstellungsdialog geprüft. review-prd / review-architecture liefern Befunde; die Autoren integrieren sie mit den passenden integrate-Skills. Es braucht keine vollständige Wiederholung nach rein redaktionellen Änderungen.
 
@@ -46,7 +46,7 @@ Explorationscode wird nie in die eigentliche Umsetzung kopiert oder gemergt. Er 
 1. Mensch und Planer A klären Ziel, Akzeptanzkriterien, relevante Szenarien, Testdaten und erwartete Ergebnisse. A verwendet prime und plan-feature.
 2. Ein anderer Agent B übernimmt in einem frischen Kontext den gespeicherten Feature Plan. Er verwendet prime und implement-feature. Ein Skill-Wechsel allein ist kein Kontextwechsel.
 3. B führt mit validate-feature die vereinbarten Checks aus, behebt Fehler und testet erneut. Implementierung und Validierung gehören in denselben Arbeitskontext. Es gibt keine obligatorischen Task-Stopps, kein Pflichtreview jedes Feature Plans und keinen separaten Validator C.
-4. document und commit sichern passende Hinweise, Testnachweise und eigene Änderungen. Der Status lautet Abnahme ausstehend.
+4. document und commit sichern passende Hinweise, Testnachweise und eigene Änderungen samt geprüftem Push auf den vorgesehenen GitHub-Branch. Der Status lautet Abnahme ausstehend.
 5. Die verantwortliche Person spielt das Ergebnis aus Anwendersicht durch und entscheidet über Annahme oder Nacharbeit. Automatische Tests dürfen diese Entscheidung nicht vorwegnehmen.
 6. Der Koordinationsagent integriert mit integrate-feature und prüft den zusammengeführten Stand. Verändertes Verhalten braucht eine erneute fachliche Abnahme.
 

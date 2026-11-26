@@ -10,3 +10,5 @@ Lies Prototype Brief, E2E-Szenarien, Verträge, Testdaten und solution.json. Ver
 Führe die vereinbarten Normal- und relevanten Fehlerfälle über die beteiligten Systeme aus. Wähle passende Kombination aus API-/Vertragstests, Playwright und Computer Use; benenne nicht verfügbare Prüfmittel und tatsächlich nicht ausgeführte Checks.
 Dokumentiere erwartete und beobachtete Ergebnisse, Stände und Belege in evidence/ nach TEST-EVIDENCE.md. Korrigiere innerhalb des Auftrags oder erstelle gezielte führende Issues für betroffene Systeme; nach Änderungen passende Nachtests.
 Lege den durchgängigen Ablauf zur Gruppenabnahme vor. Erteile sie niemals selbst. finish-release erst mit tatsächlich belegten Abnahmen und passendem Prüfstand.
+
+Beauftragte eigene Ergebnisänderungen gemäss den gemeinsamen Sicherungsregeln und Skill commit passend prüfen, gezielt committen und auf den vorgesehenen GitHub-Branch pushen; Remote-Stand prüfen. Offene fachliche Klärung und rein lesende Arbeit erzeugen keinen automatischen Speicherauftrag.

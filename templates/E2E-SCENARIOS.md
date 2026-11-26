@@ -5,8 +5,8 @@ Szenario-IDs und fachlichen Umfang aus dem Prototype Brief übernehmen. Hier die
 | ID / Ziel | Beteiligte Systeme | Ausgangsdaten | Aktionen | Erwartetes Ergebnis | Wichtige Fehlerfälle |
 | --- | --- | --- | --- | --- | --- |
 
-## Ausführung
+## 1 Ausführung
 Verweise auf konkrete Systemstände, Startmanifest, Testdaten und Prüfnachweise. Prüfmittel je Szenario wählen; Playwright und Computer Use können sich ergänzen.
 
-## Gruppenabnahme
+## 2 Gruppenabnahme
 Tatsächliche Entscheidung mit Datum, verantwortlichen Personen und Grenzen.

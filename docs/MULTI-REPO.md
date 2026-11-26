@@ -25,3 +25,9 @@ Gleiche Milestone-Namen allein belegen keine Kompatibilität. validate-e2e prüf
 Parallel arbeitende Agents nutzen andere Ports und isolierte veränderliche Testdaten. Die festen Ports des gemeinsamen Verbunds bleiben davon unabhängig.
 
 Diese erste Fassung wird mit synthetischen Systemen geprüft. Die Erprobung mit mehreren realen Gruppen-Repositories, Antigravity und weiteren Betriebssystemen bleibt vor dem Hackathon erforderlich.
+
+## Von der Architektur zur ausführbaren Startkonfiguration
+
+Die erste Solution Architecture enthält bereits den konkreten gemeinsamen Startplan für alle Systeme und den Einstieg in die E2E-Szenarien. Der E2E-Planungsagent erstellt dazu solution.json. Noch unbekannte echte Repositories oder Befehle bleiben ausdrücklich offene Entwurfswerte mit Zuständigkeit; keine fiktiven Angaben als ausführbar ausgeben. Ein unvollständiges Manifest kann die technische Prüfung noch nicht bestehen.
+
+Nach Einrichtung und Planung der Systeme bringt die Gruppe die tatsächlichen Repository-Adressen und gespeicherten Systemarchitekturen zurück in den E2E-Planungschat. Dort gleicht der Agent Ports, Startbefehle, Abhängigkeiten, Konfiguration und Bereitschaft ab und führt solution.json nach. Nach Bootstrap prüft er die tatsächlich vorhandenen Befehle; erst startbare Systeme erlauben die gemeinsame Integrationsprobe. Keine automatische Synchronisation zwischen Chats voraussetzen. Fachlich bestätigte Architektur, technisch startbarer Verbund und bestandene E2E-Szenarien getrennt dokumentieren.

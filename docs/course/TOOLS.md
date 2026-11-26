@@ -2,7 +2,7 @@
 
 Öffnet den Projektordner in eurem Agentenwerkzeug. Bittet den Agenten beim Einstieg, README und AGENTS.md zu lesen und init-project zu verwenden. Prüft gemeinsam, welche lokalen Projekt-Skills gefunden werden. Ein neuer Skill-Wechsel ist kein neuer unabhängiger Arbeitskontext.
 
-Für die Auswahl vor einem Rollenchat gilt [Modelle und Denkstufen](MODEL-POLICY.md): Astra für unabhängige Reviews, Sol für Planung und Umsetzung, Luna als sparsame Umsetzungsalternative. In Antigravity Carbon für PRD/Architektur und Reviews, sofern verfügbar, sonst Argon. Modellwechsel und Kontextwechsel sind unterschiedliche Dinge.
+Für die Auswahl vor einem Rollenchat gilt [Modelle und Denkstufen](MODEL-POLICY.md), mit aktuellen Empfehlungen, Alternativen und Verfügbarkeit für Codex und Antigravity. Stellt Modell und Denkstufe selbst ein. Modellwechsel und Kontextwechsel sind unterschiedliche Dinge.
 
 In der im Kurs erprobten Codex-Ansicht öffnet @ die Skill-Auswahl. Alternativ den Skill namentlich beauftragen und seine SKILL.md lesen lassen. Fachliche Planungsdialoge folgen [diesen Regeln](PLANNING-DIALOGUE.md); Zwischenstände vor Pausen selbst zum Speichern beauftragen.
 

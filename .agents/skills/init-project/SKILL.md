@@ -1,12 +1,14 @@
 ---
 name: init-project
-description: "Richtet ein neues E2E- oder System-Projekt und seine Arbeitszugänge ein, bevor die fachliche Planung beginnt."
+description: "Richtet ein neues oder vorhandenes E2E-/System-Projekt ein und prüft Zugänge, ohne bestehende Projektkonfiguration zu überschreiben."
 ---
 
 # init-project
 
+Lies die Regeln des tatsächlichen Zielrepositorys, README, Git-Status, vorhandene project.json und project.example.json. Kläre Rolle E2E/System, Projektname, Repository, Verantwortliche und Kursversion. Erzeuge project.json nur, wenn noch keine Konfiguration besteht. Bestehende Projektidentität, System-ID, E2E-Zuordnung und gemeinsame Angaben erhalten; fehlende Angaben gezielt ergänzen. Beim Einstieg weiterer Gruppenmitglieder nicht erneut initialisieren. Personenbezogene Echtdaten nicht als Kursbeispiele übernehmen.
 
-Lies README, Projektstatus und die Vorlage project.example.json. Kläre Rolle E2E/System, Projektname, Repository, Verantwortliche und Kursversion. Erzeuge project.json mit diesen tatsächlichen Angaben; keine personenbezogenen Echtdaten als Beispiele übernehmen.
-Im System-Projekt muss das E2E-Repository tatsächlich lesbar sein: lokaler Checkout oder verfügbarer GitHub-Zugang. Lies Prototype Brief, Solution Architecture und betroffene Verträge; sichere E2E-Repo, lokale Pfade, System-ID und konkrete Vertragsrevision. Ein bloss eingetragener URL ist kein Zugriffsbeleg. Bei fehlendem Zugriff kann Einrichtung vorbereitet, aber create-prd/bootstrap nicht als abgeschlossen behandelt werden.
-Prüfe Zusammenarbeit und geeignete private Ablage. Vereinbare einen Koordinationschat pro Person/System. Lege nur benötigte eigene Projektregeln an. Erzeuge noch keine Fachanwendung.
-Ergebnis: Projektidentität, bestätigte Zugänge, Quellenpfade und sinnvoller nächster Auftrag. E2E: define-prototype; System: create-prd. Fachliche Entscheidungen bleiben bei den Studierenden.
+Im System-Projekt muss das E2E-Repository tatsächlich lesbar sein: lokaler Checkout oder verfügbarer GitHub-Zugang. Lies Prototype Brief, bestätigte Solution Architecture und betroffene Verträge. Halte E2E-Repo, brauchbare Quellenpfade, System-ID und tatsächliche Vertragsrevision fest; erfinde keine Revision. Prüfe bei Bedarf den Zugriff auf Bericht und Anhänge. Ein auf einem anderen Rechner gespeicherter lokaler Pfad ist kein Zugriffsbeleg: nutze einen vorhandenen zugänglichen Ort oder frage konkret danach. Fehlenden Zugriff klar benennen; Einrichtung kann vorbereitet, aber create-prd/bootstrap nicht als abgeschlossen behandelt werden.
+
+Prüfe Lese-/Schreibzugriff mit dem tatsächlich verwendeten Konto und geeignete private Ablage. Pro System gibt es eine gemeinsame Planung: Bei mehreren beteiligten Personen führt eine Person den Planungsdialog und stimmt die fachlichen Ergebnisse mit den anderen ab. Koordinationschats organisieren die späteren persönlichen Aufträge. Lege nur benötigte eigene Projektregeln an. Beginne weder fachliche Planung noch Anwendungsbau ohne entsprechenden Auftrag.
+
+Sichere eigene Einrichtungsänderungen gemäss commit samt geprüftem Push; vorhandene fremde Planung nicht mitcommitten. Nenne zum Abschluss tatsächlichen Repository-/Arbeitsordner, Projekt- und Quellenzuordnung, geprüfte Zugänge, offene Einrichtungslücken und verfügbaren nächsten Skill: E2E define-prototype, System create-prd. Beim System führt der nächste Schritt zur gemeinsamen PRD-Planung in diesem System-Chat; Fachentscheidungen bleiben bei den Studierenden.

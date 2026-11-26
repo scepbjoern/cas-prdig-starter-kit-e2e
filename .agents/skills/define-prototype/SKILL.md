@@ -25,3 +25,5 @@ Prüfe selbst und gib den Studierenden beim Lesen knapp diesen Massstab mit: Kan
 Vor dem Wechsel zur Architektur Kontext/Nutzen, Prozessgrenzen/Rollen, Gesamtumfang, erste Ausbaustufe und wesentliche architekturprägende Varianten auf ausreichende Klarheit prüfen. Ein einzelner Vorführfall genügt nicht als Beleg geklärten Gesamtumfangs. Detailfragen für Architektur und PRDs dürfen offen bleiben; kritische Lücken konkret behandeln. Keine zusätzlichen Abgabefristen.
 
 Studierende lesen beide Dateien selbst und stimmen wesentliche Entscheidungen mit der Gruppe ab. Bei Updates Auswirkungen auf Architektur, Verträge und Systeme benennen. Nächster Schritt: plan-solution-architecture, im gleichen E2E-Planungschat möglich.
+
+Beauftragte eigene Ergebnisänderungen gemäss den gemeinsamen Sicherungsregeln und Skill commit passend prüfen, gezielt committen und auf den vorgesehenen GitHub-Branch pushen; Remote-Stand prüfen. Offene fachliche Klärung und rein lesende Arbeit erzeugen keinen automatischen Speicherauftrag.

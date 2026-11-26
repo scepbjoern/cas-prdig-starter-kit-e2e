@@ -10,3 +10,6 @@ Parallel arbeitende Agents verwenden getrennte Branches/Worktrees und eigene Tes
 Interface/Data Contracts im E2E-Projekt sind führend. Im System-Projekt muss vor PRD/Bootstrap realer Lesezugriff bestehen. Architekturänderungen auf abhängige Dokumente, Tests und Systeme prüfen.
 Explorative visuelle Prototypen entstehen in einem separaten Chat ohne PIV-Skills. Deren Code niemals übernehmen. Erkenntnisse und Referenzbilder dürfen die Anforderungen präzisieren.
 Common-Kursdateien bleiben möglichst eingefroren. Eigene Regeln in docs/project-rules.md pflegen. Keine geheimen oder personenbezogenen Echtdaten in Beispiele oder öffentliche Repositories übernehmen.
+
+Lies zusätzlich docs/course/COLLABORATION.md: verständliche Fachkommunikation, nummerierte Vorlagen sowie Commit und Push gelten für alle Rollen. Erkläre relevante Bedeutung und nächsten Handlungsweg passend zur Frage, ohne starre Antwortstruktur oder unnötige Wiederholungen.
+Ein beauftragter Speicher-/Abschlussstand umfasst passende Prüfung, gezielten Commit und selbständigen Push auf den vorgesehenen GitHub-Branch samt Remote-Prüfung. Kein separater Push-Aufruf durch Studierende nötig. Bei offenem Planungsdialog zunächst sammeln; bei Pushproblemen «nur lokal gesichert», Grund und nächsten Schritt nennen. Fremde Arbeit und ausdrückliche Nur-lokal-Aufträge erhalten.
