@@ -1,6 +1,6 @@
 # Kursdateien bestehender Gruppen-Repositories aktualisieren
 
-**Zielversion: 0.1.0-preview.5 · 26.11.2026.**
+**Zielversion: 0.1.0-preview.6 · 26.11.2026.**
 
 Neue Repositories aus **Use this template** enthalten den zu diesem Zeitpunkt aktuellen Kursstand. Bereits erstellte Gruppen-Repositories brauchen ein gezieltes Update der Kursdateien. Eure bisherigen Planungsunterlagen und eure Anwendung werden dabei erhalten.
 
@@ -12,7 +12,7 @@ Bestimmt für euer E2E-Repository und jedes bereits vorhandene System-Repository
 
 Öffnet den bisherigen Projektchat für das betreffende Repository. Falls dort mehrere Repositories bearbeitet werden, nennt zusätzlich das gewünschte Repository. Gebt folgenden Auftrag:
 
-> Aktualisiere die Kursdateien dieses bestehenden Gruppen-Repositories auf die Kursversion **0.1.0-preview.5**.
+> Aktualisiere die Kursdateien dieses bestehenden Gruppen-Repositories auf die Kursversion **0.1.0-preview.6**.
 >
 > Lies README.md und AGENTS.md. Prüfe Git-Status, vorhandene lokale Änderungen und den Stand unseres eigenen GitHub-Repositories. Erhalte auch unversionierte Dateien und bereits vorbereitete Commits; sichere das Update nachvollziehbar getrennt von unserer eigenen Arbeit.
 >
@@ -41,3 +41,7 @@ Danach arbeitet ihr mit euren bisherigen Projektunterlagen weiter. Wiederholt de
 ## 4 Prüfstand dieser Anleitung
 
 Der beschriebene dateiweise Updateweg wurde am 26.11.2026 an einer bestehenden E2E-Arbeitskopie mit eigenen Planungsdateien ausgeführt: 32 Kursdateien übernommen, 31 übrige Dateien per Prüfsumme unverändert, fünf Tests und Common-Manifestprüfung bestanden. Dies prüft den Updateweg, nicht die selbständige Befolgung des Prompts durch alle Modelle. Ein entsprechender Durchlauf an einem bereits implementierten studentischen System-Repository ist noch nicht erfolgt. Der Auftrag verlangt deshalb den Vergleich der einzelnen Dateien und den Erhalt projektspezifischer Ergänzungen; er ist kein blindes Kopierkommando.
+
+## 5 Webprofil und bestehende Anwendungen
+
+preview.6 enthält ein neu geprüftes Webprofil unter profiles/web-next. Bei noch nicht aufgebauten Systemen genügt das Kursupdate; bootstrap-system verwendet später dieses Profil. Eine bereits aufgebaute Anwendung hat eigene Paketdateien an der Repository-Wurzel. Diese niemals pauschal durch das Profil ersetzen. Ein Kursupdate allein migriert ihre Abhängigkeiten und ihre fachliche Architektur nicht. Der zuständige Projektagent gleicht auf ausdrücklichen Auftrag die gespeicherte Architektur, lokale Node-/npm-Version, zusätzliche Bibliotheken und Paketdateien ab, erneuert das Lockfile passend und prüft Typen, Build, Start, Schnittstellen und Oberfläche. PROFILE.md enthält die getestete Kombination und ihre Grenzen.

@@ -15,3 +15,5 @@ Die Skills liegen in .agents/skills. Dieser gemeinsame Pfad ist auch in der aktu
 Für manuelles Lesen und Ergänzen von Markdown empfehlen wir [MarkText](https://github.com/marktext/marktext). Öffnet die tatsächlichen Projektdateien; vermeidet unbemerkte parallele Kopien. Nach einer Änderung den Agenten betroffene Vorgaben und Pläne auf Konsistenz prüfen lassen.
 
 Codex/ChatGPT Desktop ist der Kursstandard, Antigravity fakultativ. Der mit der Abgabe kompatible Antigravity-Chat-Export wird separat bis 27.11. bereitgestellt. Diese Kit-Version enthält noch keinen solchen Exporter. Die Nachweisregeln der Aufgabenstellung gelten unabhängig vom Werkzeug.
+
+Für die Featureaufteilung bleibt ihr im System-Planungschat und verwendet slice-features. Für den anschliessenden Mock-Gesamtbau oder optionalen Nicht-Mock-Bauversuch startet ihr einen neuen Implementierungschat und ruft @build-system aus dem System-Repository auf. Der Skill liest die gespeicherten Quellen selbst; er erzeugt keinen neuen Chat. Der System-Planungschat bleibt für fachliche Änderungen und Koordination zuständig.

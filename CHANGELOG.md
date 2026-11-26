@@ -1,4 +1,9 @@
-# Changelog
+# Änderungen
+
+## 0.1.0-preview.6 – 26.11.2026
+
+Vollständige frühe Planung mit PRD-Tiefenwahl, stabile Inhalts-IDs, eindeutiger Systemchat/Init, Mock-Gesamtbau und datiertes getestetes Webprofil. Neuer System-Skill build-system für Mock-Gesamtbau und begrenzte Bauversuche; klare Chatführung und zwei Bauwege in Workflow und Darstellungen. Bestehende Fachunterlagen bleiben beim Kursupdate erhalten.
+
 
 ## 0.1.0-preview.5 – 26.11.2026
 

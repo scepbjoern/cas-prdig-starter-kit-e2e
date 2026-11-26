@@ -30,16 +30,19 @@ plan-solution-architecture konkretisiert Systeme, Datenflüsse, Verträge, Veran
 
 ## System planen
 
-init-project prüft den realen Zugriff auf das E2E-Projekt und dessen Quellen. Pro System entsteht eine gemeinsame Planung; bei mehreren beteiligten Personen führt eine Person den Dialog und stimmt die Ergebnisse mit den anderen ab. create-prd leitet das System-PRD ab: erste Ausbaustufe konkret, spätere Erweiterungen grob. Danach folgen unabhängiger PRD-Review und Integration im Autorenchat. Bei GUI ergänzt define-system-design die Gestaltungsgrundsätze; anschliessend konkretisiert plan-system-architecture die technische Realisierung. Die Architektur enthält einen verständlichen Überblick und technische Details für Agents. Es folgen unabhängiger Architekturreview und Integration, bevor Features aufgeteilt werden. Neue Design-Erkenntnisse gezielt ins PRD zurückführen; vorhandene aktuelle Ergebnisse nicht nochmals erstellen.
+init-project prüft den realen Zugriff auf das E2E-Projekt und dessen Quellen. Pro System entsteht eine gemeinsame Planung; bei mehreren beteiligten Personen führt eine Person den Dialog und stimmt die Ergebnisse mit den anderen ab. create-prd klärt die Planungstiefe: nur MVP, MVP detailliert mit weiteren Stufen grob oder standardmässig den gesamten bestätigten Prototypumfang detailliert. Früh vollständig planen, den tatsächlichen Umsetzungsumfang erst später auswählen. Danach folgen unabhängiger PRD-Review und Integration im Autorenchat. Bei GUI ergänzt define-system-design die Gestaltungsgrundsätze; anschliessend konkretisiert plan-system-architecture die technische Realisierung. Die Architektur enthält einen verständlichen Überblick und technische Details für Agents. Es folgen unabhängiger Architekturreview und Integration, bevor Features aufgeteilt werden. Neue Design-Erkenntnisse gezielt ins PRD zurückführen; vorhandene aktuelle Ergebnisse nicht nochmals erstellen.
 
 PRD und Architektur werden unabhängig vom Erstellungsdialog geprüft. review-prd / review-architecture liefern Befunde; die Autoren integrieren sie mit den passenden integrate-Skills. Es braucht keine vollständige Wiederholung nach rein redaktionellen Änderungen.
 
-slice-features leitet fachlich prüfbare Features, Eigentümer, Abhängigkeiten und Ausbaustufen ab. Issues halten den Arbeitsstatus, das PRD die Anforderungen. bootstrap-system baut erst danach eine passende minimale Anwendung aus dem empfohlenen Profil oder einem begründeten Alternativstack auf. Datenbank und Authentifizierung sind optional.
+slice-features bleibt im bisherigen System-Planungschat und leitet fachlich prüfbare Features, Eigentümer, Abhängigkeiten und Ausbaustufen ab. Die Menschen lesen die verlinkten Issues und wählen den Bauweg. Issues halten den Arbeitsstatus, das PRD die Anforderungen. bootstrap-system baut erst danach eine passende minimale Anwendung aus dem empfohlenen Profil oder einem begründeten Alternativstack auf. Datenbank und Authentifizierung sind optional.
 
-## Frei erkunden, dann systematisch bauen
+## Schneller Bau nach der Featureaufteilung
 
-Nach einem ersten PRD kann ein separater Chat ohne PIV-Skills in ungefähr einer halben Stunde einen visuellen Entwurf erstellen. Er bekommt PRD und Designkontext und arbeitet frei. Screenshots, Erfahrungen und präzisierte Anforderungen fliessen zurück.
-Explorationscode wird nie in die eigentliche Umsetzung kopiert oder gemergt. Er kann inspirieren. Ein bewusst als Liefergegenstand gebauter Mock ist davon zu unterscheiden: Auch ein rasch erstellter Mock erfüllt die vereinbarten Schnittstellen und Datenverträge.
+Nach PRD, Design soweit nötig, bestätigter Systemarchitektur und slice-features kann ein neuer Implementierungschat im System-Repository mit @build-system den ausgewählten Umfang zusammenhängend bauen. Der Skill nutzt bootstrap-system nur bei fehlendem Fundament; kein zusätzlicher langer Übergabeprompt nötig. Er liest diese Dokumente, relevante E2E-Verträge und die gewählten Features; einzelne Feature Plans sind für diesen Weg nicht erforderlich. Kleine offene Details als sichtbare Annahmen behandeln, bestätigte Schnittstellen und fachliche Kernregeln einhalten. Menschen erproben das Ergebnis; Erkenntnisse und nötige Änderungen im System-Planungschat in die führenden Dokumente zurückführen.
+
+Für normale Anwendungen ist dieser schnelle Bauversuch optional, zeitlich begrenzt und als Experiment auf einem eigenen Versuchsbranch im selben Repository zu führen; bei Parallelität einen eigenen Worktree verwenden. Dessen Explorationscode nicht in die anschliessende systematische Umsetzung übernehmen.
+
+Für Mocks ist der schnelle Gesamtbau dagegen der Normalfall: Im System-Repository den vereinbarten Mockumfang auf einmal implementieren, Code behalten und durch konkrete Änderungsaufträge verbessern. Keine Pflicht zu einer plan-feature-/implement-feature-Schleife für jedes einzelne Feature. Planung und Implementierung bleiben getrennte Kontexte. Der Implementierer prüft Start, fachliche Szenarien und Verträge; Menschen nehmen fachlich ab. Ein schneller Mock ist ein regulärer Teil der Solution und benötigt passende Integrationsnachweise. Status und Aufträge weiterhin nachvollziehbar in GitHub halten.
 
 ## Der Feature-PIV
 
@@ -60,7 +63,7 @@ Agents wählen geeignete Prüfmittel, etwa automatisierte Schnittstellentests, P
 
 ## Koordinieren und abschliessen
 
-Ein Koordinationschat pro Person und System kann über mehrere Durchläufe bestehen bleiben. Er kennt nächste Schritte und organisiert Übergaben. Die gemeinsame Wahrheit liegt in Dateien, Issues, Kommentaren und festgehaltenen Entscheidungen, nicht nur im Chat.
+Der bisherige System-Planungschat übernimmt auch die Koordination und kann über mehrere Durchläufe bestehen bleiben; ein zusätzlicher Chat dafür ist nicht erforderlich. Er kennt nächste Schritte und organisiert Übergaben. Die gemeinsame Wahrheit liegt in Dateien, Issues, Kommentaren und festgehaltenen Entscheidungen, nicht nur im Chat.
 prime liest bei Start, Wiederaufnahme und vor Integration die benötigten aktuellen System- und E2E-Quellen. Vertragsdiskussionen sind noch keine freigegebene Vertragsänderung.
 
 Agents dürfen passende Folge-Skills innerhalb des vereinbarten Auftrags selbst auswählen. Grössere Ziele können mehrere unabhängige Features umfassen; Planung und Implementierung bleiben getrennt. Ein autonom erreichter technischer Zielzustand bedeutet noch keine menschliche Abnahme.

@@ -1,7 +1,7 @@
 # Solution Architecture
 
 Status / Revision / zugrunde liegender Prototype Brief / bestätigte Entscheidungen und offene Annahmen:
-Gesamtumfang und erste Ausbaustufe; spätere bestätigte Stufen nur soweit architekturrelevant.
+Gesamter bestätigter Prototypumfang auf Architekturebene, erste Ausbaustufe und weitere bestätigte Stufen; Systemgrenzen und Verträge früh konkret, Umsetzungsreihenfolge getrennt festhalten.
 
 ## 1 Verständlicher Überblick
 Systemgrenzen und Datenflüsse als Diagramm. Welches System tut was? Welche fachlichen Folgen haben die Entscheidungen?
@@ -26,3 +26,5 @@ Austauschformate, Datenhoheit, Fehler-/Wiederholungsverhalten und weitere Integr
 
 ## 5 Integration und Änderungen
 Kleine frühe Integrationsprobe; gemeinsame Szenarien. Betroffene Systeme bei Vertragsänderungen abstimmen. Offene Entscheidungen und unabhängige Review-Befunde.
+
+Referenzen: Abschnittsnummern und stabile IDs für einzeln besprochene Anforderungen, Kriterien, Szenarien, Fähigkeiten, Entscheidungen und Befunde verwenden. Bestehende IDs erhalten; natürliche eindeutige Schlüssel nicht unnötig duplizieren. Siehe COLLABORATION.md (im Kit docs/course/).

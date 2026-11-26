@@ -15,7 +15,7 @@ Lass die Studierenden zuerst eigene Vorstellungen zu Ziel, Lerninteresse und gew
 ## Umfang gemeinsam klären
 Erarbeite, was gleich bleibt, vereinfacht, gemockt, technologisch ersetzt, ausgelassen oder ergänzt wird. Normalfall ist der gesamte vereinbarte E2E-Prozess in angemessener Tiefe. Prüfe die ausgewählten Digitalisierungspotenziale und wichtigen Ausnahmen auf grobe Abdeckung, ohne System-PRDs oder technische Tasklisten vorwegzunehmen.
 
-Trenne bestätigten Gesamtumfang, konkrete erste Ausbaustufe, grobe spätere Ausbaustufen und unentschiedene Ideen. Übergreifende Szenarien mit Ausgangslage, Aktion und erkennbarem Ergebnis gemeinsam festlegen. Bereits sinnvolle Testdaten nutzen, nicht alle späteren Details erzwingen.
+Arbeite den gesamten bestätigten Prototypumfang früh ausreichend konkret aus: Fähigkeiten, Prozessvarianten und übergreifende Szenarien auch für spätere bestätigte Stufen. Trenne erste Ausbaustufe, weitere bestätigte Stufen und unentschiedene Ideen; eine spätere Umsetzung bedeutet nicht automatisch grobe Planung. System-PRD-Details nicht vorwegnehmen. Übergreifende Szenarien mit Ausgangslage, Aktion und erkennbarem Ergebnis gemeinsam festlegen. Bereits sinnvolle Testdaten nutzen, nicht alle späteren Details erzwingen.
 
 ## Ergebnisse und Übergang
 Beim Speicherauftrag docs/prototype-brief.md nach templates/PROTOTYPE-BRIEF.md erstellen oder fortschreiben: knapper Prozesskontext, tatsächlicher Bauauftrag, Prioritäten, fachliche Szenarien, Quellenhinweise und offene Entscheidungen. Abweichungen und ihre begründeten Entscheidungen zentral in report/deviations.md nach templates/REPORT-DEVIATIONS.md festhalten, nicht downstream wiederholen.

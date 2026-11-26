@@ -24,3 +24,5 @@ Beende den Review mit einer kurzen Einordnung, einem Link auf den gespeicherten 
 
 Geeignete kurze Formulierung bei offenen Befunden:
 «Wechselt jetzt zurück in den Chat, in dem ihr die Architektur erarbeitet habt. Ruft dort @integrate-architecture-review auf und nennt den Reviewbericht [tatsächlicher Pfad]. Der dortige Planungsagent arbeitet die technischen Befunde ein und klärt die offenen fachlichen Entscheidungen mit euch.»
+
+Prüfe beziehungsweise erhalte stabile IDs für Anforderungen, Szenarien, Entscheidungen und Befunde gemäss COLLABORATION.md. Prüfe den gesamten vereinbarten Umfang in der gewählten Planungstiefe, ohne nachgelagerte Detailpläne zu erzwingen. Nach der Systemplanung gilt für Mocks der Gesamtbau mit gezielten Änderungen statt einer Pflichtplanung jedes einzelnen Features; Tests und menschliche Abnahme bleiben erforderlich.

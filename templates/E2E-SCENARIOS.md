@@ -10,3 +10,5 @@ Verweise auf konkrete Systemstände, Startmanifest, Testdaten und Prüfnachweise
 
 ## 2 Gruppenabnahme
 Tatsächliche Entscheidung mit Datum, verantwortlichen Personen und Grenzen.
+
+Referenzen: Abschnittsnummern und stabile IDs für einzeln besprochene Anforderungen, Kriterien, Szenarien, Fähigkeiten, Entscheidungen und Befunde verwenden. Bestehende IDs erhalten; natürliche eindeutige Schlüssel nicht unnötig duplizieren. Siehe COLLABORATION.md (im Kit docs/course/).

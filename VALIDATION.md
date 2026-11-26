@@ -1,5 +1,13 @@
 # Prüfstand – E2E
 
+## Nachprüfung 0.1.0-preview.6 – 26.11.2026
+
+- Zehn bestehende Kit-Tests bestanden: Common 3, E2E 5, System 2. 44 Skill-Dateien mit Frontmatter; 19 Vorlagendateien einschliesslich Common-Kopien mit nummerierten Abschnitten; Design-Asset identisch zur Vorlage.
+- Common-Verteilung: 29 Dateien je Kit, Manifestprüfung ohne Abweichungen. Git-Diff-Formatprüfung und Abgleich öffentlicher Quellen ohne private Testfalldaten.
+- Webprofil: Auflösung im Lockfile entspricht exakt dem isoliert getesteten Stack vom 26.11.: Node 24.22.3/npm 11.19.1, Next 16.4.6, React 19.3.1, TypeScript 6.0.3, Playwright 1.65.1 und passende Types. Bootstrap, Installation, Typprüfung, Produktionsbuild, API/Frontend und vorhandener Kurs-Browsertest bestanden. Keine optionalen DB/Auth-Module, macOS oder echte Mehrsystem-Fachanwendung mitgetestet.
+- Zwei Bauwege in Mermaid/SVG und Anleitungen abgeglichen; SVG-Zusammenfassungen 1/3/5 samt identischen Unterrichtsansichten 1/3 gerendert und visuell geprüft. Bestehende Dateinamen bleiben kompatibel.
+- build-system inhaltlich gegen Mock-Gesamtbau, Nicht-Mock-Versuch, vorhandene Anwendung, fehlende Quellen, fachlichen Konflikt, fehlenden Partner und Pushfehler geprüft. Das ist eine Anweisungsprüfung, kein autonomer Modell-Praxistest des neuen Skills. Der menschliche Durchlauf und die spätere echte E2E-Integration stehen weiterhin aus.
+
 ## Nachprüfung 0.1.0-preview.5 – 26.11.2026
 
 - npm test: 5 vorhandene Tests bestanden; insgesamt zehn in Common/E2E/System.

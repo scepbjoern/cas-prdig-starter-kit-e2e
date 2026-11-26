@@ -12,3 +12,11 @@ Im System-Projekt muss das E2E-Repository tatsächlich lesbar sein: lokaler Chec
 Prüfe Lese-/Schreibzugriff mit dem tatsächlich verwendeten Konto und geeignete private Ablage. Pro System gibt es eine gemeinsame Planung: Bei mehreren beteiligten Personen führt eine Person den Planungsdialog und stimmt die fachlichen Ergebnisse mit den anderen ab. Koordinationschats organisieren die späteren persönlichen Aufträge. Lege nur benötigte eigene Projektregeln an. Beginne weder fachliche Planung noch Anwendungsbau ohne entsprechenden Auftrag.
 
 Sichere eigene Einrichtungsänderungen gemäss commit samt geprüftem Push; vorhandene fremde Planung nicht mitcommitten. Nenne zum Abschluss tatsächlichen Repository-/Arbeitsordner, Projekt- und Quellenzuordnung, geprüfte Zugänge, offene Einrichtungslücken und verfügbaren nächsten Skill: E2E define-prototype, System create-prd. Beim System führt der nächste Schritt zur gemeinsamen PRD-Planung in diesem System-Chat; Fachentscheidungen bleiben bei den Studierenden.
+
+## Eindeutiger Einstieg im gemeinsamen Projektordner
+
+Ein neuer System-Planungschat darf im übergeordneten Codex-Projekt starten; der ursprüngliche E2E-Chat ist nicht erforderlich. Bei entsprechendem Auftrag das bereits angelegte System-Repository in einem eigenen Unterordner neben der E2E-Arbeitskopie klonen oder die passende vorhandene Kopie weiterverwenden. Keine zusätzlichen Repositories/Forks anlegen oder vorhandene Dateien überschreiben. Fehlende Git-Anmeldung mit dem persönlichen Konto geführt einrichten lassen.
+
+Vor dem Initialisieren Zielrepository, project.example.json.kind und den tatsächlich gelesenen Skillpfad abgleichen. E2E und System enthalten gleichnamige init-project-Skills: Für Systemarbeit ausdrücklich die SKILL.md aus dem System-Unterordner und dessen Regeln verwenden. Den tatsächlichen Pfad nennen, bei unklarer Auswahl einen direkten Dateipfadauftrag ermöglichen. Eine zweite sichtbare Auswahl ist kein zweites auszuführendes Init.
+
+Systemname aus der Solution Architecture, Repository-URL, Verantwortliche und erreichbare E2E-Pfade/URL gemeinsam aufnehmen. Quellen lesen statt alten Chat voraussetzen. Auf Auftrag einen Titel wie «100 Webportal – Systemplanung» setzen, soweit ein passendes Werkzeug verfügbar ist; sonst den Titel zur manuellen Benennung nennen. Erst nach geprüftem Quellenzugriff zu create-prd führen.

@@ -10,3 +10,5 @@ Gemeinsame IDs, Relationen, Statuswerte, Zeit-/Datumsdarstellung, leere/unbekann
 
 ## 2 Synthetische Szenariodaten
 Konsistente Beispiele für Normal- und relevante Fehlerfälle. Keine Echtdaten. Gemeinsame Bedeutung verlangt keine gemeinsame Datenbank.
+
+Referenzen: Abschnittsnummern und stabile IDs für einzeln besprochene Anforderungen, Kriterien, Szenarien, Fähigkeiten, Entscheidungen und Befunde verwenden. Bestehende IDs erhalten; natürliche eindeutige Schlüssel nicht unnötig duplizieren. Siehe COLLABORATION.md (im Kit docs/course/).
